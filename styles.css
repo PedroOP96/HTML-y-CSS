@@ -1,0 +1,958 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body .intro{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blue;
+}
+
+button:hover{
+    background-color: rgb(4, 242, 250);
+    color: black;
+
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-presentación{ 
+    color: rgb(4, 242, 250);;
+    font-family: cursive; 
+                    
+}
+
+
+/* Visión de dispositivos Móviles */
+
+
+header{
+    background-color: rgb(255, 255, 255);
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("Imágenes/persona-leyendo.jpeg");
+    background-size: cover; 
+    background-position: center center;         
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-family: cursive;
+    color: rgb(0, 217, 255);
+    font-size: 3em;
+    text-align: center;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}Z
+
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration:oklab(from color l a b);
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(7, 238, 241);
+}
+
+header a:hover{
+    color: rgb(0, 0, 255);
+}
+
+
+/* Introducción */
+
+#intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imágenes/libroycafé.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+#intro h1{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:oblique;
+}
+
+#cabecera button{
+    font-size: 1.75em
+}
+
+
+#presentación {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("Imágenes/libros-estanterías.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+#presentación .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#presentación .texto{
+    width: 80%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: cursive; 
+    font-size: 1.2em;
+    
+}
+
+#nuestras-secciones{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestras-secciones .container{
+    padding: 150px 12px;
+}
+
+#nuestras-secciones h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestras-secciones p{
+    display: none;
+}
+
+#nuestras-secciones .carta{
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imágenes/alas-de-sangre.webp");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imágenes/spiderman.webp");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imágenes/dragon-ball.jpg");
+
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/");
+
+}
+
+
+/* Subsección Libros */
+
+#Libros {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("Imágenes/dragónnegro.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+
+#Libros .container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#Libros .texto{
+    width: 80%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 162, 0);
+    font-family: cursive; 
+    font-size: 1.2em;
+    
+}
+
+#Libros h2{
+    margin-top: 0px;
+    color: rgb(255, 162, 0);
+}
+
+
+#Libros .color-libros{ 
+    color:rgb(255, 0, 0);
+    font-family: cursive; 
+                    
+}
+
+#Libros .img-container{
+    background-image: url("Imágenes/alas-de-sangre.png");
+    background-size: cover;
+    background-position:top;
+    height: 700px;
+    width: 600px; 
+}
+
+#Libros .img-container .botón{
+    background-color: rgb(255, 0, 0);
+    color:rgb(255, 162, 0);
+    background-position: center center;
+  }
+
+
+
+#Libros .img-container .botón:hover{
+    background-color: rgb(255, 162, 0); 
+    color:rgb(255, 0, 0);
+    background-position: center center;
+  }
+
+
+/* Subsección Cómics */
+
+
+#Comics {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("Imágenes/stan-lee-.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+
+#Comics .container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+
+#Comics h2{
+    margin-top: 0px;
+    color: rgb(0, 255, 255);
+}
+
+
+#Comics .color-comics{ 
+    color:rgb(255, 0, 0);
+    font-family: cursive; 
+                    
+}
+
+#Comics .img-container{
+    background-image: url("Imágenes/spiderman.webp");
+    background-size: cover;
+    background-position:top;
+    height: 700px;
+    width: 600px; 
+}
+
+#Comics .botón{
+    background-color: rgb(0, 17, 252);
+    color:rgb(255, 0, 0);
+    background-position: center center;
+  }
+
+
+
+#Comics .botón:hover{
+    background-color: rgb(255, 0, 0); 
+    color:rgb(0, 21, 255);
+    background-position: center center;
+  }
+
+
+
+#Mangas {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("Imágenes/dragon-ball-4.webp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+
+#Mangas .container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#Mangas .texto{
+    width: 80%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 162, 0);
+    font-family: cursive; 
+    font-size: 1.2em;
+    
+}
+
+#Mangas h2{
+    margin-top: 0px;
+    color: rgb(255, 162, 0);
+}
+
+
+#Mangas .color-libros{ 
+    color:rgb(255, 0, 0);
+    font-family: cursive; 
+                    
+}
+
+#Mangas .img-container{
+    background-image: url("Imágenes/akira.webp");
+    background-size: cover;
+    background-position:top;
+    height: 700px;
+    width: 600px; 
+}
+
+#Mangas .img-container .botón{
+    background-color: rgb(255, 0, 0);
+    color:rgb(255, 162, 0);
+    background-position: center center;
+  }
+
+
+
+  
+
+#Frases{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imágenes/hombre-escribiendo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Frases h2{
+    font-size: 5em;
+    color: rgb(255, 162, 0);
+    
+}
+
+
+
+#Frases .texto{
+    width: 80%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 162, 0);
+    font-family: cursive; 
+    font-size: 2.2em;        
+}
+
+#Frases .firma {        
+        width: 80%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgb(255, 251, 0);
+        font-family: cursive; 
+        font-size: 2em;        
+    }
+
+
+
+
+
+#Final{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imágenes/libroycafé.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+
+
+#Final h2{
+        color: white;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style:oblique;
+    }
+
+#Final p{
+        color: white;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style:oblique;
+}
+
+
+
+/* Visión de Escritorio */
+
+@media (min-width: 850px){
+   
+    header{
+        background-color: rgb(255, 255, 255);
+        background-image:linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("Imágenes/header2.jpeg");
+        background-size: cover; 
+        background-position: center center;         
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #intro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imágenes/libroycafé.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #intro h1{
+        font-size: 8em;
+    }
+
+    #presentación {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("Imágenes/libros-estanterías.jpeg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }    
+    #presentación .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #presentación .texto{
+        width: 80%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        font-family: cursive; 
+        font-size: 1.2em;
+        
+    }
+
+    #presentación h2{
+        margin-top: 0px;
+    }
+
+    #presentación .img-container{
+        background-image: url("Imágenes/libros4.jpeg");
+        background-size: cover;
+        background-position:top;
+        height: 700px;
+        width: 600px; 
+        opacity: 0.8;
+    }
+
+    
+    
+
+    #nuestras-secciones .Secciones{
+        display: flex;
+        justify-content: center;
+        
+
+    }
+
+    #nuestras-secciones p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestras-secciones h2{
+        font-size: 4em;
+    }
+
+    #nuestras-secciones h3{
+        margin-top: 50px;
+        color: yellow;
+        padding: 50px;
+    }
+
+    #nuestras-secciones .carta{
+        padding: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: 2px 2px 10px rgba(0,0,0,0.5);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imágenes/alas-de-sangre.webp");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imágenes/spiderman.webp");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imágenes/dragon-ball.jpg");
+
+    }
+
+    .carta:nth-child(4){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imágenes/hombre-escribiendo.jpeg");
+
+    }
+
+/* Subsección Libros */
+
+    #Libros {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("Imágenes/dragónnegro.jpeg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      
+
+    #Libros .container{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+    #Libros .texto{
+        width: 80%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgb(255, 162, 0);
+        font-family: cursive; 
+        font-size: 1.2em;
+        
+    }
+
+    #Libros h2{
+        margin-top: 0px;
+        color: rgb(255, 162, 0);
+    }
+
+
+    #Libros .color-libros{ 
+        color:rgb(255, 0, 0);
+        font-family: cursive; 
+                        
+    }
+
+    #Libros .img-container{
+        background-image: url("Imágenes/alas-de-sangre.png");
+        background-size: cover;
+        background-position:top;
+        height: 700px;
+        width: 600px; 
+    }
+    
+    #Libros .img-container .botón{
+        background-color: rgb(255, 0, 0);
+        color:rgb(255, 162, 0);
+        background-position: center center;
+      }
+
+    
+    
+    #Libros .img-container .botón:hover{
+        background-color: rgb(255, 162, 0); 
+        color:rgb(255, 0, 0);
+        background-position: center center;
+      }
+
+
+    /* Subsección Cómics */
+
+
+    #Comics {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("Imágenes/stan-lee-.jpeg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      
+
+    #Comics .container{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+    
+
+    #Comics h2{
+        margin-top: 0px;
+        color: rgb(0, 255, 255);
+    }
+
+
+    #Comics .color-comics{ 
+        color:rgb(255, 0, 0);
+        font-family: cursive; 
+                        
+    }
+
+    #Comics .img-container{
+        background-image: url("Imágenes/spiderman.webp");
+        background-size: cover;
+        background-position:top;
+        height: 700px;
+        width: 600px; 
+    }
+    
+    #Comics .botón{
+        background-color: rgb(0, 17, 252);
+        color:rgb(255, 0, 0);
+        background-position: center center;
+      }
+
+    
+    
+    #Comics .botón:hover{
+        background-color: rgb(255, 0, 0); 
+        color:rgb(0, 21, 255);
+        background-position: center center;
+      }
+
+
+
+    #Mangas {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("Imágenes/dragon-ball-4.webp");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      
+
+    #Mangas .container{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+    #Mangas .texto{
+        width: 80%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgb(255, 162, 0);
+        font-family: cursive; 
+        font-size: 1.2em;
+        
+    }
+
+    #Mangas h2{
+        margin-top: 0px;
+        color: rgb(255, 162, 0);
+    }
+
+
+    #Mangas .color-libros{ 
+        color:rgb(255, 0, 0);
+        font-family: cursive; 
+                        
+    }
+
+    #Mangas .img-container{
+        background-image: url("Imágenes/akira.webp");
+        background-size: cover;
+        background-position:top;
+        height: 700px;
+        width: 600px; 
+    }
+    
+    #Mangas .img-container .botón{
+        background-color: rgb(255, 0, 0);
+        color:rgb(255, 162, 0);
+        background-position: center center;
+      }
+
+    
+
+      
+
+    #Frases{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imágenes/hombre-escribiendo.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #Frases h2{
+        font-size: 5em;
+        color: rgb(255, 162, 0);
+        
+    }
+
+    
+
+    #Frases .texto{
+        width: 80%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgb(255, 162, 0);
+        font-family: cursive; 
+        font-size: 2.2em;        
+    }
+
+    #Frases .firma {        
+            width: 80%;
+            max-width: 600px;
+            text-align: initial;
+            padding-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: rgb(251, 255, 0);
+            font-family: cursive; 
+            font-size: 2em;        
+        }
+
+
+
+
+
+    #Final{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            height: 90vh;
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            ,url("Imágenes/libroycafé.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+        }
+
+
+    #Final h2{
+            color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style:oblique;
+        }
+
+    #Final p{
+            color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style:oblique;
+        }
+  
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+
+
