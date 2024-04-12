@@ -4,7 +4,9 @@
 
 html{
     scroll-behavior: smooth;
+    background-image: url(Imágenes/libros3.jpeg);
 }
+
 
 body .intro{
     font-family: 'Roboto', sans-serif;
@@ -56,7 +58,7 @@ header{
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ), url("Imágenes/persona-leyendo.jpeg");
+    ), url("Imágenes/libros3.jpeg");
     background-size: cover; 
     background-position: center center;         
 }
@@ -78,12 +80,37 @@ header .container{
 }Z
 
 
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
+header .navegación{
+
+    width: 1000px;
+    margin: 30px auto;
+    background: #fff ;
 }
+
+.navegación ul{
+    list-style: none;
+}
+
+.menu > li{
+    /* position: relative; */
+    display: inline-block;
+}
+
+.menu > li  > a {
+    display: block;
+    padding: 15px 20px;
+    color: #0ce1f4;
+    font-family: 'Open sans';
+}
+
+.menu li a:hover{
+    color: green;
+    transition: all .3s ;
+}
+
+
+
+
 
 header a{
     padding: 5px 12px;
@@ -91,12 +118,55 @@ header a{
     font-weight: bold;
     font-size: 24px;
     color: rgb(7, 238, 241);
-}
+} */
 
-header a:hover{
+ header a:hover{
     color: rgb(0, 0, 255);
 }
 
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+    background: #979797 ;
+
+}
+
+.menu > li  > a {
+    display: block;
+    padding: 15px 20px;
+    color: #0c14f4;
+    font-family: 'Open';
+}
+
+.menu li a:hover{
+    color: rgb(4, 204, 249);
+    transition: all .3s ;
+}
+
+
+.submenu{
+    position: absolute;
+    background: #979797;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #0c14f4;
+    font-family: 'bold';
+    
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
 
 /* Introducción */
 
@@ -122,6 +192,8 @@ header a:hover{
     color: white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style:oblique;
+    font-size: 100px;
+    
 }
 
 #cabecera button{
@@ -319,6 +391,7 @@ header a:hover{
 
 
 
+
 #Comics h2{
     margin-top: 0px;
     color: rgb(0, 255, 255);
@@ -417,7 +490,8 @@ header a:hover{
 
   
 
-#Frases{
+  #Frases{
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -435,9 +509,18 @@ header a:hover{
     background-position: center center;
 }
 
+#Frases .container{
+    padding: 0;
+    margin: 2;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
 #Frases h2{
-    font-size: 5em;
+    font-size: 4em;
     color: rgb(255, 162, 0);
+    background-position: center center;
     
 }
 
@@ -453,7 +536,7 @@ header a:hover{
     justify-content: center;
     color: rgb(255, 162, 0);
     font-family: cursive; 
-    font-size: 2.2em;        
+    font-size: 1.7em;        
 }
 
 #Frases .firma {        
@@ -464,14 +547,104 @@ header a:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        color: rgb(255, 251, 0);
+        color: rgb(255, 162, 0);
         font-family: cursive; 
         font-size: 2em;        
     }
 
 
 
+/* Formulario de Formularios */
 
+
+#Contacto{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imágenes/libros4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.Formulario{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.Formulario h2{
+    margin-bottom: px;
+    font-size: 50px;
+    background-color: rgb(1, 30, 251);
+    color:#ffffff ;
+}
+.Formulario p{
+    font-size: 25px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    background-color: rgb(1, 30, 251);
+    color:#ffffff ;
+
+}
+.Formulario a{
+    font-size: 25px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: rgb(1, 30, 251);
+    color:#ffffff ;
+    font-weight: 700;
+}
+.Formulario a i{
+    color: rgb(0, 13, 255);
+    margin-right: 10px;
+}
+.Formulario form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.Formulario form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.Formulario .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: rgb(21, 0, 255);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.Formulario .btn-enviar:hover{
+    background: #01f5e5;
+    color: #0c14f4;
+}
 
 #Final{
         display: flex;
@@ -502,7 +675,9 @@ header a:hover{
         color: white;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-style:oblique;
-}
+    }
+
+
 
 
 
@@ -516,20 +691,87 @@ header a:hover{
             0deg,
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
-        ), url("Imágenes/header2.jpeg");
+        ), url("Imágenes/libros4.jpeg");
         background-size: cover; 
-        background-position: center center;         
+        background-position: center center;
+        border-radius: 15px;
+      
     }
-
+    
+    header .logo{
+        margin: 0;
+        padding: 25px 30px;
+        font-weight: bold;
+        font-family: cursive;
+        color: rgb(0, 217, 255);
+        font-size: 3em;
+        text-align: center;
+    }
+    
     header .container{
-        flex-direction: row;
-        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    header .navegación{
+    
+        width: 1000px;
+        margin: 30px auto;
+        
+        background-position: center left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navegación ul{
+        list-style: none;
+       
+    }
+    
+    .menu > li{
+        position: relative;
+        display: inline-block;
+        background: #979797 ;
+
+    }
+    
+    .menu > li  > a {
+        display: block;
+        padding: 15px 20px;
+        color: #0c14f4;
+        font-family: 'Open';
+    }
+    
+    .menu li a:hover{
+        color: rgb(4, 204, 249);
+        transition: all .3s ;
     }
 
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
+
+    .submenu{
+        position: absolute;
+        background: #979797;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1.5s;
+    }
+
+
+    .submenu li a{
+        display: block;
+        padding: 15px;
+        color: #0c14f4;
+        font-family: 'bold';
+        
+    }
+
+    .menu li:hover .submenu{
+        visibility: visible;
+        opacity: 1;
     }
 
     #intro{
@@ -780,6 +1022,12 @@ header a:hover{
         height: 700px;
         width: 600px; 
     }
+
+    #Comics .video video {
+        width: 500px;
+        height: 300px;
+        object-fit: contain;
+      }
     
     #Comics .botón{
         background-color: rgb(0, 17, 252);
@@ -860,6 +1108,7 @@ header a:hover{
       
 
     #Frases{
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -877,9 +1126,18 @@ header a:hover{
         background-position: center center;
     }
 
+    #Frases .container{
+        padding: 0;
+        margin: 2;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
     #Frases h2{
-        font-size: 5em;
+        font-size: 4em;
         color: rgb(255, 162, 0);
+        background-position: center center;
         
     }
 
@@ -895,7 +1153,7 @@ header a:hover{
         justify-content: center;
         color: rgb(255, 162, 0);
         font-family: cursive; 
-        font-size: 2.2em;        
+        font-size: 1.7em;        
     }
 
     #Frases .firma {        
@@ -906,7 +1164,7 @@ header a:hover{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            color: rgb(251, 255, 0);
+            color: rgb(255, 162, 0);
             font-family: cursive; 
             font-size: 2em;        
         }
