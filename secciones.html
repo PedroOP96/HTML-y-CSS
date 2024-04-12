@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <title>Presentación - The Blue Book</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <title>The Blue Book</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    </head>
 <body>
     <header id="Cabecera">
         <div class="container">
-            <a href="index.html" class="logo">The Blue Book</a>
-            <nav>
-                <a href="presentación.html">Presentación</a>
-                <a href="secciones.html">Nuestras Secciones</a>
-                <a href="agradecimientos.html">Agradecimientos</a>
+            <a href="index.html" class="logo">The Blue Book</a></div>
+
+        <nav class="navegación">
+            <ul class="menu">
+                <li> <a href="presentación.html">Presentación</a></li>
+
+                <li><a href="secciones.html">Nuestras Secciones</a>
+                    <ul class="submenu">
+                            
+                        <li><a href="secciones.html#Libros">Libros</a></li>
+                        <li><a href="secciones.html#Comics">Comics</a></li>
+                        <li><a href="secciones.html#Mangas">Mangas</a></li>
+                        <li><a href="secciones.html#Frases">Frases</a></li>
+                    </ul>
+                        
+                        
+                </li>
+
+                    <li><a href="Contacto.html">Contacto</a></li>                
+
+                    <li><a href="agradecimientos.html">Agradecimientos</a></li>
+
+                    
+
+
+                </ul>
+                
             </nav>
-        </div>
     </header>
 
 
@@ -58,7 +80,7 @@
             <div class="container">
                 <div class="img-container">
     
-                    <button class="botón" type="button" onclick="location.href='#nuestras-secciones'">Back</button>
+                    <button class="botón" type="button" onclick="location.href='#Cabecera'">Back</button>
                 </div>
                  
                 <div class="texto">
@@ -75,7 +97,6 @@
               
             </div>
         </section>
-
     
 
       <!-- Subsección Cómics -->
@@ -89,18 +110,18 @@
                 
             </div>
 
-
+        
         <div><h2>Historia del  <span class="color-comics">Hombre Araña</span></h2>
 
-           <video src="multimedia/stan-lee.mp4" controls></video>
+          
+             <div class="video"> <video src="multimedia/stan-lee.mp4" controls autoplay muted></video></div>
 
-            
+             <div><button class="botón" type="button" onclick="location.href='#Cabecera'">Back</button> </div>
         </div>
         
-        <div>
-            <button class="botón" type="button" onclick="location.href='#Cabecera'">Back</button>
-        </div>
+       
           
+        
         
         </section>
 
@@ -137,26 +158,26 @@
         </section>
 
 
-
-
         <section id="Frases">
-            <div><h2>El mar en sus ojos</h2>
+            <div class="container">
+                
+                
+                <div><h2>El mar en sus ojos</h2>
 
-            <p class="texto">Me hipnotiza el mar reflejado en sus ojos, me fascina el sol en sus mejillas, la luz de su sonrisa me guía para no perderme en el camino, más con el eco de su risa consigo encontrarme, la brisa de su respiración es capaz de arroparme y con el ritmo de tu corazón conseguiste atraparme.</p>
+                    <p class="texto">Me hipnotiza el mar reflejado en sus ojos, me fascina el sol en sus mejillas, la luz de su sonrisa me guía para no perderme en el camino, más con el eco de su risa consigo encontrarme, la brisa de su respiración es capaz de arroparme y con el ritmo de tu corazón conseguiste atraparme.</p>
+        
+                    <p class="firma">P.O.P</p></div>
+            
 
-            <p class="firma">P.O.P</p>
+                <div><button class="botón" type="button" onclick="location.href='#Cabecera'">Back</button></div>
+            
             </div>
-        <div> <button class="botón" type="button" onclick="location.href='#Cabecera'">Back</button></div>
-
+            
+            
+        
         </section>
 
     </section>
-
-
-
-
-
-  
 
     
 
